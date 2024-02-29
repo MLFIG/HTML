@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL CAPITÁN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #4CAF50; /* Color verde césped */
+            box-sizing: border-box; /* Incluye el contorno en el ancho total */
+            position: relative;
+        }
+        .container {
+            position: relative;
+            border: 96px solid #fff; /* Contorno blanco */
+            height: calc(100vh - 192px); /* Altura total - doble del contorno */
+            margin: 96px; /* Márgenes igual al contorno */
+            box-sizing: border-box; /* Incluye el contorno en el ancho total */
+            overflow: hidden; /* Evita que los rectángulos de la portería sobresalgan */
+        }
+        .goal-post {
+            position: absolute;
+            width: 10px; /* Ancho de los postes de la portería */
+            height: 120px; /* Altura de los postes de la portería */
+            background-color: #fff;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .goal-post.left {
+            left: -10px; /* Posición del poste izquierdo */
+        }
+        .goal-post.right {
+            right: -10px; /* Posición del poste derecho */
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1; /* Asegura que el encabezado esté sobre el contorno */
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center.
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;  
+            justify-content: space-around;
+        }
+        article {
+            width: 30%;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box; /* Hace el padding en el ancho total */
+            position: relative;
+            z-index: 2; /* Asegura que los artículos estén sobre la línea blanca */
+        }
+        article iframe {
+            max-width: 100%; /* Hace que el iframe sea responsivo */
+        }
+        #search-form {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            display: flex;
+        }
+        #search-input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+        #search-button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: 1px solid #007bff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1; /* Asegura que el footer esté sobre la línea blanca */
+        }
+
+        /* Línea horizontal y circunferencia */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            border-top: 5px solid #fff;
+            z-index: 0; /* Ajusta el valor z-index para que esté detrás de los artículos */
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 550px; /* Ajusta el tamaño de la circunferencia */
+            height: 550px; /* Ajusta el tamaño de la circunferencia */
+            border: 5px solid #fff;
+            border-radius: 50%;
+            background-color: #4CAF50; /* Color verde césped */
+            z-index: 0; /* Ajusta el valor z-index para que esté detrás de los artículos */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        EL CAPITAN
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button type="submit" id="search-button">Buscar</button>
+        </form>
+    </header>
+
+    <nav>
+        <a href="https://www.facebook.com/elcapitanpasionporeldeporte" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">FACEBOOK</a>
+    </nav>
+
+    <section>
+        <article style="text-align: center;">
+		    <h2>Club America vs Cruz Azul</h2>
+<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fabogadamariamendoza%2Fvideos%2F7490091897670298%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </article>
+        <article style="text-align: center;">
+		    <h2>COMIDA PARA DEPORTES</h2>
+<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FHNOS.SANTAMARIA%2Fvideos%2F332675019205647%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </article>
+        <article style="text-align: center;">
+		    <h2>Tigres vs Atlas</h2>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flacapitalcocina%2Fposts%2Fpfbid02fRxpuqaicw1u7AqRPWBK8Y9pN3BPTNDGgNeyeGjnhucmUK5boBpDk5cNpddX91ucl&show_text=true&width=500" width="500" height="609" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </article>
+    </section>
+
+    <footer>
+        &copy; 2024 El Capitan.
+    </footer>
+
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var searchTerm = document.getElementById('search-input').value.toLowerCase();
+
+            var articles = document.querySelectorAll('article');
+            articles.forEach(function(article) {
+                var headerText = article.querySelector('h2, h3').textContent.toLowerCase();
+                if (headerText.includes(searchTerm)) {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
